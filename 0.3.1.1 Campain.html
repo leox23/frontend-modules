@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .parent-container {
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .parent-container>div {
+            flex: 50%;
+            max-width: 50%;
+        }
+
+        .text-container {
+            text-align: left;
+            color: white;
+            padding: 92px;
+            background-color: #FF6B00;
+            order: 1;
+
+        }
+
+        .text-container>h6 {
+            font-family: 'Lato';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
+        }
+
+        .text-container>p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .image-container {
+            background-color: green;
+            background-size: cover;
+            background-position: center;
+            order: 2;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container>div {
+                flex: 100%;
+                max-width: 100%;
+            }
+
+            .image-container {
+                order: 1;
+                background-image: url('https://images.unsplash.com/photo-1551966775-a4ddc8df052b');
+                background-size: cover;
+                height: 300px;
+            }
+
+            .text-container {
+                padding: 16px;
+                order: 2;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="text-container">
+            <h6>
+                Cada año, 1000 millones de niños, niñas y adolescentes en todo el planeta son marcados con las
+                cicatrices físicas y emocionales que deja la violencia.
+            </h6>
+            <p>La Agenda 2030 para el Desarrollo Sostenible, también conocida como los Objetivos del Desarrollo
+                Sostenible (ODS) generará una voluntad política y financiera sin precedentes para alcanzar
+                colectivamente estos objetivos que apunta a una sociedad más justa y equitativa.
+                Con la adopción de los ODS, hemos visto por primera vez el reconocimiento de la eliminación de la
+                violencia contra la niñez como un tema de interés global. La campaña Necesitamos a todo el Mundo es
+                parte de la respuesta de la respuesta global de World Vision a los ODS.</p>
+        </div>
+        <div class="image-container"
+            style="background-image: url('https://images.unsplash.com/photo-1551966775-a4ddc8df052b');">
+            <!-- <img src="" alt=""> -->
+        </div>
+    </div>
+</body>
+
+</html>
