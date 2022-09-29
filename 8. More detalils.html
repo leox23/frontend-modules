@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .parent-container {
+            display: grid;
+            place-content: center;
+            padding: 50px 0px;
+        }
+
+        .content-container {
+            display: flex;
+            width: 1120px;
+        }
+
+        .left-content {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            padding-right:60px;
+            /*
+            background: blue;
+            */
+        }
+
+        .right-content {
+            padding:40px 50px;
+            width: 40%;
+            background: #FF6B00;
+            color:#F7FEFF;
+        }
+
+        .subtitle-left {
+            font-size:24px;
+        }
+        .content-left {
+            font-size: 18px;
+        }
+
+        .content-right, .unordered-item {
+            font-size: 18px;
+        }
+
+
+        .content-footer {
+            padding-top: 100px;
+            margin-top:0px;
+            font-style: italic;
+        }
+
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        .parent-container {
+            padding: 0px;
+        }
+        .content-container {
+            flex-direction: column;
+        }
+
+        .content-container, .left-content, .right-content {
+            width: 100%;
+        }
+
+        .subtitle-left {
+            margin:0px;
+        }
+
+        .left-content {
+            padding:32px 16px;
+        }
+
+        .right-content {
+            padding:32px 30px;
+        }
+
+        ul {
+            padding-left: 10px;
+        }
+
+        
+
+        .content-footer {
+            padding-top: 70px;
+        }
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="content-container">
+            <div class="left-content content">
+                <h3 class="subtitle-left">Cada año, 1000 millones de niños, niñas y adolescentes en todo el planeta son
+                    marcados con las cicatrices físicas y emocionales que deja la violencia.</h3>
+                <p class="content-left">World Vision define la violencia contra la niñez como toda forma de violencia
+                    física, sexual y mental, negligencia o trato negligente, maltrato, explotación, daño o abuso
+                    incluyendo explotación sexual con fines comerciales, tráfico y empleo infantil, prácticas tales como
+                    la mutilación genital y matrimonio infantil.</p>
+                <p class="content-left">La violencia contra la niñez aflora en todos los escenarios: En países ricos y
+                    pobres, en contexto urbano o rural, en las escuelas… la violencia contra la niñez está en todas
+                    partes.</p>
+                <p class="content-left">Los hogares, las escuelas y las comunidades –los lugares donde los niños
+                    deberían sentirse más seguros- son los lugares donde ocurre la mayor cantidad de abusos en
+                    Latinoamérica y el Caribe.</p>
+                <p class="content-left">Sin embargo, un sondeo reciente realizado a nivel hemisférico por World Vision e
+                    Ipsos, reveló que la población percibe los riesgos de la violencia más en lugares públicos (53%),
+                    que en el hogar (12%) o en la escuela (15%).</p>
+            </div>
+            <div class="right-content">
+                <h2 class="title-right">DONDE ESTA LA VIOLENCIA</h2>
+                <h3 class="subtitle-right">World Vision encargó a IPSOS, sondear a más de 11.000 individuos en 28 países
+                    para entender mejor las percepciones públicas acerca de la protección de los niños contra la
+                    violencia en Bolivia, Brasil, Colombia, República Dominicana, Ecuador, El Salvador, Guatemala,
+                    México, Nicaragua y Perú.</h3>
+                <p class="content-right">El sondeo halló en Latinoamérica que:</p>
+                <ul>
+                    <li class="unordered-item">40% de los entrevistados conoce personalmente a una víctima de violencia
+                        infantil.</li>
+                    <li class="unordered-item">69% sentía que en los últimos 5 años la violencia contra la niñez
+                        aumentó.</li>
+                    <li class="unordered-item">4 de cada 5 entrevistados cree que la violencia contra los niños y
+                        niñasestá sub registrada y que por lo tanto no conocemos sus dimensiones reales.</li>
+
+                </ul>
+                <p class="content-footer">FUENTE: SONDEO WORLD VISION/IPSOS 2014</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
