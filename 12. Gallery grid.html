@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .parent-container {
+            display: grid;
+            place-content: center;
+            height: fit-content;
+        }
+
+        .items-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+            gap: 32px 32px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "item1 item4 item6 item8"
+                "item2 item4 item7 item8"
+                "item2 item5 item7 item9"
+                "item3 . . item10"
+                "item3 . . item10";
+            height: 936px;
+            width: 1120px;
+        }
+
+        .items {
+            border-radius: 8px;
+        }
+
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .item4 {
+            grid-area: item4;
+        }
+
+        .item5 {
+            grid-area: item5;
+        }
+
+        .item7 {
+            grid-area: item7;
+        }
+
+        .item6 {
+            grid-area: item6;
+        }
+
+        .item8 {
+            grid-area: item8;
+        }
+
+        .item9 {
+            grid-area: item9;
+        }
+
+        .item10 {
+            grid-area: item10;
+        }
+
+        .item3 {
+            grid-area: item3;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container {
+                padding: 32px 16px;
+                width: 100%;
+            }
+
+            .items-container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px 0px;
+                width: 100vw;
+                height: fit-content;
+            }
+
+            .item1,
+            .item3,
+            .item6,
+            .item10,
+            .item5 {
+                height: 256px;
+            }
+
+            .item2 {
+                height: 350px;
+            }
+
+            .item4,
+            .item8,
+            .item7 {
+                height: 480px;
+            }
+
+            .item9 {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="items-container">
+            <div class="item1 items"
+                style="background-image: url('https://images.unsplash.com/photo-1650710918253-75584a8b5299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80');background-size: cover;">
+            </div>
+            <div class="item2 items"
+                style="background-image: url('https://images.unsplash.com/photo-1556621266-45150d1e9f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');background-size: cover;">
+            </div>
+            <div class="item3 items"
+                style="background-image: url('https://images.unsplash.com/photo-1627327719679-f8f5f61366f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=929&q=80');background-size: cover;">
+            </div>
+            <div class="item4 items"
+                style="background-image: url('https://images.unsplash.com/photo-1610079732238-308f4de9b0d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');background-size: cover;">
+            </div>
+            <div class="item5 items"
+                style="background-image: url('https://images.unsplash.com/photo-1465513527097-544020a68b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');background-size: cover;">
+            </div>
+            <div class="item7 items"
+                style="background-image: url('https://images.unsplash.com/photo-1566575365117-0e5ed31da1b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80');background-size: cover;">
+            </div>
+            <div class="item6 items"
+                style="background-image: url('https://images.unsplash.com/photo-1615538622919-b9949998690d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');background-size: cover;">
+            </div>
+            <div class="item8 items"
+                style="background-image: url('https://images.unsplash.com/photo-1516693848837-cdc6ce4e72d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=374&q=80');background-size: cover;">
+            </div>
+            <div class="item9 items"
+                style="background-image: url('https://images.unsplash.com/photo-1556274233-a790ebfc8ac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');background-size: cover;">
+            </div>
+            <div class="item10 items"
+                style="background-image: url('https://images.unsplash.com/photo-1582670431674-f6391934dd2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');background-size: cover;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

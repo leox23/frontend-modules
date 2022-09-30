@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .parent-container {
+            display: grid;
+            place-content: center;
+            width: 100%;
+            padding: 32px 0px;
+        }
+
+        .parent-child-container {
+            display: flex;
+            flex-direction: column;
+            width: 765px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-module {
+            margin-bottom: 10px;
+        }
+
+        .bottom-border {
+            height: 8px;
+            width: 100px;
+            background: #FF6B00;
+            margin-bottom: 50px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #212529;
+            line-height: 36px;
+            font-weight: 500;
+            margin-bottom: 34px;
+
+        }
+
+        .rows-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #DADFF1;
+            box-shadow: 0px 0px 20px rgba(181, 191, 227, 0.25);
+            border-radius: 8px;
+            padding: 8px 18px;
+            margin-bottom: 8px;
+        }
+
+        .item>*,
+        .download-container>* {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .download-container {
+            display: flex;
+            cursor: pointer;
+
+        }
+
+        .download {
+            font-family: 'Hind', sans-serif;
+            color: #FF6B00;
+            font-weight: 700;
+        }
+
+        .download-icon {
+            margin-left: 6px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .content-footer {
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+            color: #212529;
+        }
+
+        .email-content {
+            color: #00ACCA;
+            text-decoration: underline;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container {
+                padding: 32px 16px;
+            }
+
+            .parent-child-container {
+                width: 100%;
+            }
+
+            .title-module {
+                margin-top: 0px;
+                text-align: center;
+            }
+
+            .bottom-border {
+                margin-bottom: 24px;
+            }
+
+            .subtitle {
+                margin-top: 0px;
+                text-align: center;
+            }
+
+            .item {
+                flex-direction: column;
+            }
+
+            .download-container {
+                margin-top: 8px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+            .download {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="parent-child-container">
+            <div class="header">
+                <h1 class="title-module">Futuras plazas disponibles</h1>
+                <div class="bottom-border"></div>
+                <p class="subtitle">Para futuras plazas disponibles, conoce los requisitos en los siguientes enlaces:
+                </p>
+            </div>
+            <div class="rows-container">
+                <div class="item">
+                    <h3 class="title">Facilitador de Desarrollo</h3>
+                    <div class="download-container">
+                        <p class="download">Descargar</p>
+                        <div class="download-icon" style="background-image: url('https://seekicon.com/free-icon-download/download_30.svg');
+                    background-size: cover;"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3 class="title">Técnico de Proyecto</h3>
+                    <div class="download-container">
+                        <p class="download">Descargar</p>
+                        <div class="download-icon" style="background-image: url('https://seekicon.com/free-icon-download/download_30.svg');
+                    background-size: cover;"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3 class="title">Coordinador(a) de Proyecto</h3>
+                    <div class="download-container">
+
+                        <p class="download">Descargar</p>
+                        <div class="download-icon" style="background-image: url('https://seekicon.com/free-icon-download/download_30.svg');
+                    background-size: cover;"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="content-footer">Envía tu CV al correo <a
+                    class="email-content">contrataciondepersonalsv@wvi.org</a>
+                colocando en el asunto el nombre de la plaza a la que deseas aplicar.</p>
+        </div>
+    </div>
+</body>
+
+</html>
