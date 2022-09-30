@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .parent-container {
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+
+        }
+
+        .parent-container>div {
+            flex: 100%;
+            max-width: 100%;
+        }
+
+
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container>div {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+
+        <div class="title-container">
+            <h6>
+                Consultoría “Equipo de levantamiento de información (encuestas y grupos focales) y análisis de grupos
+                focales para la línea base de los Programas Técnicos”
+            </h6>
+        </div>
+
+        <div class="location-container">
+            El Salvador
+            Fecha límite para aplicar: 12 de enero del 2022
+            <a>https://bit.ly/WVSV-TDR</a>
+
+        </div>
+
+        <div class="info-container">
+            Aplica y descarga TDR: https://bit.ly/WVSV-TDR
+            Reunión informativa vía Zoom: Viernes 7 enero 2022
+            * Solicita el enlace de reunión vía email a carolina_Gomez@wvi.org
+        </div>
+
+    </div>
+</body>
+
+</html>
