@@ -26,6 +26,8 @@
             height: fit-content;
             display: flex;
             flex-wrap: wrap;
+            background-color: #FF6B00;
+
         }
 
         .parent-container>div {
@@ -37,8 +39,14 @@
             text-align: left;
             color: white;
             padding: 0px 92px;
-            background-color: #FF6B00;
+            /* align-items: center; */
+            margin: auto;
+            /* align-content: center; */
 
+        }
+
+        .text-container>h6 {
+            margin: 0;
         }
 
         .text-container>h6 {
@@ -55,10 +63,16 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 28px;
+            margin: 0;
+            padding-top: 24px;
+        }
+
+        .text-container>p:nth-of-type(2) {
+            padding-top: 32px;
         }
 
         .image-container {
-            height: 700px;
+            height: 702px;
             background-size: cover;
             background-position: center;
             order: 2;
