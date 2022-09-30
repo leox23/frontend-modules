@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .parent-container {
+            display: grid;
+            place-content: center;
+            width: 100%;
+            padding: 92px 0px;
+        }
+
+        .content-parent {
+            width: 1120px;
+        }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        .block-content {
+            display: flex;
+            width: 100%;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            background-size: cover;
+            border-radius: 30px;
+        }
+
+        .content-text-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 8px;
+            padding-right: 70px;
+        }
+
+        h3 {
+            margin-top: 0px;
+            margin-bottom: 8px;
+        }
+
+        .text-content {
+            margin-top: 0px;
+        }
+
+        .do-it {
+            margin-top: 8px;
+            width: 203px;
+            height: 43px;
+            background: #FF6B00;
+            border-radius: 4px;
+            border: 0px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .image-container {
+            width: 55%;
+            height: 480px;
+            border-radius: 8px;
+            background-size: cover;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+
+            .parent-container {
+                padding: 0px;
+            }
+
+            .content-parent {
+                width: 100%;
+            }
+
+            .content-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                padding: 32px 16px;
+            }
+
+
+            .left-content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .content-text-container {
+                padding-right: 0px;
+                flex-direction: column;
+            }
+
+            .text-content {
+                font-size: 16px;
+            }
+
+            .do-it {
+                width: 100%;
+            }
+
+            .image-container {
+                height: 328px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="content-parent">
+            <div class="content-container">
+                <div class="left-content">
+                    <h1 class="title">Como Voluntario</h1>
+                    <div class="block-content">
+                        <div class="logo" style="background-image: url('https://www.svgrepo.com/show/425253/balls-footbal.svg');
+                        background-size: cover;"></div>
+                        <div class="content-text-container">
+                            <h3 class="subtitle">Comunitario</h3>
+                            <p class="text-content">Los voluntarios comunitarios producen un impacto significativo en la
+                                sociedad y en las comunidades. Dan voz los niños y niñas, entregan su tiempo, dedicación
+                                y
+                                pasión, guiados porprincipios cristianos que son un diferencial de nuestra organización.
+                                La
+                                empatía, calidad en su servicio y cercanía a la gente, son su mejor carta de
+                                presentación.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <div class="logo" style="background-image: url('https://www.svgrepo.com/show/425253/balls-footbal.svg');
+                        background-size: cover;"></div>
+                        <div class="content-text-container">
+                            <h3 class="subtitle">En un área específica</h3>
+                            <p class="text-content">Dona tu tiempo, capacidades y habilidades en un proyecto en
+                                beneficio de
+                                las comunidades más vulnerables.</p>
+                        </div>
+                    </div>
+                    <button class="do-it">Hazte Voluntario</button>
+                </div>
+
+                <div class="image-container"
+                    style="
+                background-image: url('https://images.unsplash.com/photo-1563203922-607129bed00c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80');">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
