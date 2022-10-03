@@ -1,88 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Title</title>
-        <style>
-            
 
-            #main {
-                display: flex;
-                margin-left: 110px;
-            }
+<head>
+    <title>Title</title>
 
-            #subtitle {
-                text-align: center;
-            }
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-            #image1 {
-                width: 540px;
-                border-radius: 20px;
-                height: 466px;
-                background-image: url('https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
-            }
-            #line {
-                width: 65px;
-                height: 8px;
-                background: orange;
-                margin-left: 639px;
-            }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
 
-            #icon {
-                width: 64px;
-                height: 64px;
-                border-radius: 100%;
-                background-image: url('https://pics.freeicons.io/uploads/icons/png/4622457031642069608-64.png');
-                margin-left: 710px;
-            }
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
 
-            #info {
-                margin-left: 60px;
-                width: 380px;
-            }
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+        .parent-container {
+            display: grid;
+            place-content: center;
+        }
 
-            .list {
-                color: orange;
-            }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-            .element {
-                color: black;
-            }
+        }
 
-        </style>
-    </head>
-    <body>
-        <div>
+
+        #subtitle {
+            text-align: center;
+        }
+
+        #line {
+            width: 65px;
+            height: 8px;
+            background: orange;
+        }
+
+        #main {
+            display: flex;
+            padding: 50px 160px;
+            max-width: 1120px;
+            gap:60px;
+    align-items: center;
+        }
+
+        #image1 {
+            width: 100%;
+            border-radius: 20px;
+            height: 466px;
+            background-image: url('https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
+        }
+
+        #info {
+            width: 100%;
+        }
+
+
+        #icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            background: black;
+        }
+
+
+        ul {
+            margin-top:0px;
+            margin-bottom: 0px; 
+        }
+
+        .list {
+            color: orange;
+        }
+
+        .element {
+            color: black;
+        }
+
+        
+
+        @media (min-width: 320px) and (max-width: 480px) {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <header class="header-container">
             <h2 id="subtitle">
                 Cuenta con dos componentes principales:
             </h2>
             <div id="line">
+        </header>
+        <div id="main">
+            <div id="image1">
+                <!-- big image: https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 -->
             </div>
-            <div id="icon"></div>
-            <div id="main">
-                <div id="image1" >
-                    <!-- big image: https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 -->
-                </div>
-                <div id="info">
-                    <h3>WASH<br>(Agua,  Saneamiento  e  Higiene)</h3>
-                    <p>
-                        cuyo  objetivo  es  promover  el  acceso  sostenible  a  agua, saneamiento adecuado y promoción de la higiene para las poblaciones más vulnerables.
-                    </p>
-                    <ul>
-                        <br>
-                        <li class="list"><span class="element">Promoción del acceso sostenible a agua potable.</span></li>
-                        <br>
-                        <li class="list"><span class="element">Promoción del acceso a saneamiento mejorado.</span></li>
-                        <br>
-                        <li class="list"><span class="element">Promoción de la higiene y cambios de comportamiento.</span></li>
-                        <br>
-                        <li class="list"><span class="element">Fortalecimiento de comunidades y gobiernos locales para facilitar intervenciones y servicios WASH.</span></li>
-                        <br>
-                    </ul>
-                    <p>
-                        El Programa Técnico Entornos Resilientes tiene la meta de que niñas, niños, adolescentes y jóvenes vivan y crezcan en entornos resilientes que promueven su desarrollo.
-                    </p>
-                </div>
+            <div id="info">
+
+                <div id="icon"></div>
+                <h3>WASH<br>(Agua, Saneamiento e Higiene)</h3>
+                <p>
+                    cuyo objetivo es promover el acceso sostenible a agua, saneamiento adecuado y promoción de la
+                    higiene para las poblaciones más vulnerables.
+                </p>
+                <ul>
+                    <br>
+                    <li class="list"><span class="element">Promoción del acceso sostenible a agua potable.</span></li>
+                    <br>
+                    <li class="list"><span class="element">Promoción del acceso a saneamiento mejorado.</span></li>
+                    <br>
+                    <li class="list"><span class="element">Promoción de la higiene y cambios de comportamiento.</span>
+                    </li>
+                    <br>
+                    <li class="list"><span class="element">Fortalecimiento de comunidades y gobiernos locales para
+                            facilitar intervenciones y servicios WASH.</span></li>
+                    <br>
+                </ul>
+                <p>
+                    El Programa Técnico Entornos Resilientes tiene la meta de que niñas, niños, adolescentes y jóvenes
+                    vivan y crezcan en entornos resilientes que promueven su desarrollo.
+                </p>
             </div>
         </div>
-    </body>
+    </div>
+    </div>
+</body>
+
 </html>
