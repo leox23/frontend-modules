@@ -30,6 +30,7 @@
         .parent-container {
             display: grid;
             place-content: center;
+            padding:64px 160px;
         }
 
         .header-container {
@@ -42,7 +43,9 @@
 
 
         #subtitle {
+            margin-top: 0px;
             text-align: center;
+            font-size: 32px;
         }
 
         #line {
@@ -53,17 +56,18 @@
 
         #main {
             display: flex;
-            padding: 50px 160px;
+            padding: 50px 0px;
             max-width: 1120px;
             gap:60px;
-    align-items: center;
+            align-items: center;
         }
 
         #image1 {
             width: 100%;
             border-radius: 20px;
             height: 466px;
-            background-image: url('https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
+            background-image: url('https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXVuaWRhZCUyMG1hbm9zJTIwanVudGFzJTIwc29jaWFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
         }
 
         #info {
@@ -95,7 +99,21 @@
         
 
         @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container {
+                display: flex;
+                flex-direction: column;
+                padding: 16px 24px;
+            }
 
+            #main {
+                display: flex;
+                flex-direction: column;
+                gap:16px;
+            }
+
+            #image1 {
+                height: 216px;
+            }
         }
     </style>
 </head>
