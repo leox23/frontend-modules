@@ -1,118 +1,146 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Title</title>
-        <style>
-            .main-container {
-                display: flex;
-                flex-wrap: wrap;
-                margin: 115px 180px;
-                /* width: 1440px;
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 115px 180px;
+            /* width: 1440px;
                 height: 425px;
                 margin: 115px 180px;
                 padding: 92px 0px;
                 flex-direction: row;
                 align-items: center; */
-            }
+        }
 
-            .text-container {
-                width: 50%;
-                flex-grow: 1;
-                text-align: left;
+        .text-container {
+            width: 50%;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 50%;
+            flex-flow: row wrap;
+            /* margin: auto; */
+        }
+
+        .circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            text-align: center;
+            margin-left: 20%;
+            margin-bottom: 15%;
+        }
+
+        #fisica {
+            background: #FF6B00;
+            line-height: 130px;
+        }
+
+        #cognitiva {
+            background: #842E14;
+            line-height: 130px;
+        }
+
+        #emocional {
+            background: #FDD25F;
+            line-height: 130px;
+        }
+
+        #social {
+            background: #9054A1;
+            line-height: 130px;
+        }
+
+        #economica {
+            background: #006661;
+            line-height: 130px;
+        }
+
+        #espiritual {
+            background: #00ACCA;
+            line-height: 130px;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+
+            .main-container {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 32px 16px;
+                width: 100%;
+                margin: 2px;
+                flex-wrap: wrap;
             }
 
             .flex-container {
                 display: flex;
-                width: 50%;
-                flex-flow: row wrap;
-                /* margin: auto; */
+                flex-direction: row;
+                width: 100%;
+                height: 30%;
+                gap: 16px;
             }
 
             .circle {
-                width: 48px;
-                height: 48px;
-                border-radius: 100%;
-                text-align: center;
-                margin-left: 20%;
-                margin-bottom: 15%;
-            }
-
-            #fisica {
-                background: #FF6B00;
-                line-height: 130px;
-            }
-
-            #cognitiva {
-                background: #842E14;
-                line-height: 130px;
-            }
-
-            #emocional {
-                background: #FDD25F;
-                line-height: 130px;
-            }
-
-            #social {
-                background: #9054A1;
-                line-height: 130px;
-            }
-
-            #economica {
-                background: #006661;
-                line-height: 130px;
-            }
-
-            #espiritual {
-                background: #00ACCA;
-                line-height: 130px;
-            }
-
-            @media (min-width: 320px) and (max-width: 480px) {
-                
-                .main-container {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    padding: 32px 16px;
-                    width: 100%;
-                    margin: 2px;
-                    flex-wrap: wrap;
-                }
-
-                .flex-container {
-                    display: flex;
-                    flex-direction: row;
-                    width: 100%;
-                    height: 30%;
-                    gap:16px;
-                }
-
-                .circle {
                 margin-left: 10%;
                 margin-bottom: 12%;
-                }
-
-                .text-container {
-                    height: 70%;
-                    width: 100%;         
-                }
             }
-        </style>
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="text-container">
-                <p>
-                    El  Programa  Técnico  Oportunidades,  Protección  y  Ternura  tiene  por  objetivo  desarrollar  y fortalecer a los niños, niñas, adolescentes y jóvenes en habilidades para la vida, salud mental, capacidad  de  agencia  y  resiliencia,  a  través  de  la  creación  y  promoción  de  espacios  de desarrollo,  participación  y  protección.  La  meta  es  que  la  niñez  salvadoreña  pueda  ser fortalecida en diferentes áreas:
-                </p>
-            </div>
-            <div class="flex-container">
-                <div class="circle" id="fisica" href="">Fisica</div>
-                <div class="circle" id="cognitiva" href="">Cognitiva</div>
-                <div class="circle" id="emocional" href="">Emocional</div>
-                <div class="circle" id="social" href="">Social</div>
-                <div class="circle" id="economica" href="">Economica</div>
-                <div class="circle" id="espiritual">Espiritual.</div>
-            </div>
+
+            .text-container {
+                height: 70%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="text-container">
+            <p>
+                El Programa Técnico Oportunidades, Protección y Ternura tiene por objetivo desarrollar y fortalecer a
+                los niños, niñas, adolescentes y jóvenes en habilidades para la vida, salud mental, capacidad de agencia
+                y resiliencia, a través de la creación y promoción de espacios de desarrollo, participación y
+                protección. La meta es que la niñez salvadoreña pueda ser fortalecida en diferentes áreas:
+            </p>
         </div>
-    </body>
+        <div class="flex-container">
+            <!--  Envolver los items segun el ejemplo siguiente, corregir stilos de vista desktop para ir a movil    -->
+            <div class="items-container" id="fisica" href="">
+                <div class="circle" id="cognitiva" href="">Cognitiva</div>
+                <p>Fisica</p>
+            </div>
+
+            <div class="circle" id="cognitiva" href="">Cognitiva</div>
+            <div class="circle" id="emocional" href="">Emocional</div>
+            <div class="circle" id="social" href="">Social</div>
+            <div class="circle" id="economica" href="">Economica</div>
+            <div class="circle" id="espiritual">Espiritual.</div>
+        </div>
+    </div>
+</body>
+
 </html>
