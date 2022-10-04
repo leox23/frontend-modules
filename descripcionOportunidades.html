@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Title</title>
         <style>
-            #main {
+            .main-container {
                 display: flex;
+                flex-wrap: wrap;
+                margin: 115px 180px;
+                /* width: 1440px;
+                height: 425px;
+                margin: 115px 180px;
+                padding: 92px 0px;
+                flex-direction: row;
+                align-items: center; */
+            }
+
+            .text-container {
+                width: 50%;
+                flex-grow: 1;
+                text-align: left;
             }
 
             .flex-container {
                 display: flex;
-                padding: 20px;
-                width: 400px;
+                width: 50%;
                 flex-flow: row wrap;
-                margin-left: 50px;
+                /* margin: auto; */
             }
 
             .circle {
                 width: 48px;
                 height: 48px;
                 border-radius: 100%;
-                margin: 30px;
                 text-align: center;
-            }
-
-            #oport {
-                display: block;
-                width: 414px;
-                margin-left: 100px;
-                margin-top: 50px;
+                margin-left: 20%;
+                margin-bottom: 15%;
             }
 
             #fisica {
@@ -45,34 +52,60 @@
                 line-height: 130px;
             }
 
-            #economica {
-                background: #006661;
-                line-height: 130px;
-                text-align: center;
-            }
-
             #social {
                 background: #9054A1;
                 line-height: 130px;
             }
 
+            #economica {
+                background: #006661;
+                line-height: 130px;
+            }
+
             #espiritual {
-                /* position: relative; */
                 background: #00ACCA;
                 line-height: 130px;
-                text-align: center;
+            }
+
+            @media (min-width: 320px) and (max-width: 480px) {
+                
+                .main-container {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    padding: 32px 16px;
+                    width: 100%;
+                    margin: 2px;
+                    flex-wrap: wrap;
+                }
+
+                .flex-container {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 30%;
+                    gap:16px;
+                }
+
+                .circle {
+                margin-left: 10%;
+                margin-bottom: 12%;
+                }
+
+                .text-container {
+                    height: 70%;
+                    width: 100%;         
+                }
             }
         </style>
     </head>
     <body>
-        <div id="main">
-            <div id="oport">
-                <p id ="oportunidades">
+        <div class="main-container">
+            <div class="text-container">
+                <p>
                     El  Programa  Técnico  Oportunidades,  Protección  y  Ternura  tiene  por  objetivo  desarrollar  y fortalecer a los niños, niñas, adolescentes y jóvenes en habilidades para la vida, salud mental, capacidad  de  agencia  y  resiliencia,  a  través  de  la  creación  y  promoción  de  espacios  de desarrollo,  participación  y  protección.  La  meta  es  que  la  niñez  salvadoreña  pueda  ser fortalecida en diferentes áreas:
                 </p>
             </div>
             <div class="flex-container">
-                
                 <div class="circle" id="fisica" href="">Fisica</div>
                 <div class="circle" id="cognitiva" href="">Cognitiva</div>
                 <div class="circle" id="emocional" href="">Emocional</div>
