@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
     <head>
         <title>Title</title>
         <style>
@@ -88,24 +89,78 @@
             .inf-container > p {
                 margin-top: 5%;
             }
+=======
 
-            .logcuad-container {
-                /* padding: 0% 11%; */
-                width: 100%;
-                height: 35%;
-            }
+<head>
+    <title>Title</title>
+    <style>
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* debe ser relativo*/
+            width: 1440px;
+            height: 490px;
+        }
 
-            .logo-container {
-                display: flex;
-                flex-wrap: wrap;
-                border: 1px solid orange;
-                border-radius: 15px;
-                height: 100%;
-                width: 100%;
-                align-content: center;
-                justify-content: center;
-            }
+        /* quitar stilos innecesarios*/
+        .shadow-top {
+            width: 100%;
+            height: 25%;
+            border: 1px solid gray;
+        }
 
+        /* debe ser 1120px*/
+        .container2 {
+            padding: 0% 11%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loginf-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 30%;
+            justify-content: space-between;
+            /* align-items: center; */
+            border: 1px solid orange;
+            /* eliminar esta linea al terminar de estilzar */
+        }
+
+        .location-container {
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content: stretch;
+            width: 33%;
+            height: 100%;
+        }
+
+        .img-container {
+            display: flex;
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            background-image: url('https://pics.freeicons.io/uploads/icons/png/17094183761571183081-64.png');
+            background-color: orange;
+        }
+>>>>>>> 03b9041aec690396d9f2e41dc8098c767c615687
+
+        .text-container {
+            margin-top: 0px !important;
+            margin-left: 0%;
+            width: 100%;
+        }
+
+        .logcuad-container {
+            /* padding: 0% 11%; */
+            width: 100%;
+            height: 35%;
+        }
+
+<<<<<<< HEAD
             .logo-jovenes {
                 width: 128px;
                 height: 128px;
@@ -196,9 +251,76 @@
                     <div class="logo-container">
                         <div class="logo-jovenes">
                         </div>
+=======
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid orange;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .logo-jovenes {
+            width: 128px;
+            height: 128px;
+            border-radius: 100%;
+            background-color: orange;
+            background-image: url('https://pics.freeicons.io/premium/business-businessman-company-hero-super-team-together-icon-78369-64.png');
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+
+            .main-container {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container2">
+            <div class="loginf-container">
+                <div class="location-container">
+                    <div class="img-container">
+                    </div>
+                    <div>
+                        <p class="text-container">
+                            Socio<br><br>[[logo]] The BARRETT<br>[image]Family Foundation
+                        </p>
+                    </div>
+                </div>
+                <div class="location-container">
+                    <div class="img-container">
+                    </div>
+                    <div>
+                        <p class="text-container">
+                            Ubicación<br><br>La Libertad, San Salvador,<br>San Miguel
+                        </p>
+                    </div>
+                </div>
+                <div class="location-container">
+                    <div class="img-container">
+                    </div>
+                    <div>
+                        <p class="text-container">
+                            Impacto<br><br>1,200 jóvenes beneficiados de 15<br>a 29 años de edad
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="logcuad-container">
+                <div class="logo-container">
+                    <div class="logo-jovenes">
+>>>>>>> 03b9041aec690396d9f2e41dc8098c767c615687
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
