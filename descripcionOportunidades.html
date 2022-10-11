@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
         }
 
         body,
@@ -22,32 +29,40 @@
         }
 
         .main-container {
+            display: grid;
+            place-content: center;
+            padding: 92px 0px;
+        }
+
+        .content-center-container {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: stretch;
-            margin: 115px 180px;
-            /* width: 1440px;
-                height: 425px;
-                margin: 115px 180px;
-                padding: 92px 0px;
-                flex-direction: row;
-                align-items: center; */
+            justify-content: space-between;
+            align-items: center;
+            width: 1120px;
         }
 
         .text-container {
             width: 50%;
             text-align: left;
             margin: 0%;
+        }
 
+        .text-container>p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #333333;
         }
 
         .flex-container {
             display: flex;
-            width: 50%;
             flex-flow: row wrap;
-            /* margin: auto; */
+            gap: 60px 0px;
             justify-content: space-around;
+            width:50%;
         }
 
         .item-container {
@@ -55,13 +70,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 33%;
+            flex-basis: 30%;
         }
 
-        .item-container>p {
-            margin: 0%;
-            margin-top: 10%;
-            margin-bottom: 25%;
+        .circle {
+            box-shadow: 10px 10px 10px #ebebeb;
+        }
+
+        .text-container > p {
+            margin-top: 10px;
+
         }
 
         .circle {
@@ -100,33 +118,30 @@
         @media (min-width: 320px) and (max-width: 480px) {
 
             .main-container {
-                flex-direction: column-reverse;
-                padding: 32px 16px;
                 width: 100%;
-                margin: 2px;
+                padding: 32px 16px;
+            }
+
+            .content-center-container {
+                flex-direction: column-reverse;
+                width: 100%;
             }
 
             .flex-container {
-                flex-direction: row;
                 width: 100%;
-                height: 30%;
-                gap: 16px;
-            }
-
-            .item-container {
-                width: 30%;
             }
 
             .text-container {
-                height: 70%;
                 width: 100%;
             }
+
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
+        <div class="content-center-container">
         <div class="text-container">
             <p>
                 El Programa Técnico Oportunidades, Protección y Ternura tiene por objetivo desarrollar y fortalecer a
@@ -138,7 +153,7 @@
         <div class="flex-container">
             <!--  Envolver los items segun el ejemplo siguiente, corregir stilos de vista desktop para ir a movil    -->
             <div class="item-container">
-                <div class="circle"  id="fisica"></div>
+                <div class="circle" id="fisica"></div>
                 <p>Fisica</p>
             </div>
             <div class="item-container">
@@ -161,6 +176,8 @@
                 <div class="circle" id="espiritual"></div>
                 <p>Espiritual.</p>
             </div>
+        </div>
+
         </div>
     </div>
 </body>
