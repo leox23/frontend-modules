@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
         }
 
         body,
@@ -27,21 +33,21 @@
             width: 100%;
             flex-wrap: wrap;
             height: fit-content;
-            padding: 92px 0px;
+            padding: 0px 0px 92px 0px;
         }
 
         .shadow-top {
             width: 100%;
-            /* en la siguiente linea esta definido el height que ocupa la sobra curva */
-            /* height: 25%;  */
-            border: 1px solid gray;
-            visibility: hidden;
+            height: 150px;
+            position: absolute;
+            z-index: -1;
         }
 
         .container2 {
             display: flex;
             flex-direction: column;
             justify-content: stretch;
+            padding-top: 92px;
             width: 1120px;
             height: 100%;
         }
@@ -54,9 +60,6 @@
             width: 100%;
             height: 20%;
             justify-content: space-between;
-            /* align-items: center; */
-            /* border: 1px solid orange; */
-            /* eliminar esta linea al terminar de estilzar */
         }
 
         .location-container {
@@ -66,13 +69,38 @@
             height: 100%;
         }
 
+
+
         .img-container {
             width: 64px;
             height: 64px;
             border-radius: 100px;
-            background-image: url('https://pics.freeicons.io/uploads/icons/png/17094183761571183081-64.png');
-            background-color: orange;
+            background-image: url('https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png');
+            background-size: cover;
             /*  eliminar esta linea cuando jale el logo */
+        }
+
+        .flex-child-item {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .text-title-fundation {
+            text-align: right;
+        }
+
+        .featured-text {
+            font-size: 1.4rem;
+            font-style: bold;
+        }
+
+        .item-logo-image {
+            background-image: url('https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
         }
 
         .inf-container {
@@ -128,14 +156,21 @@
             width: 128px;
             height: 128px;
             border-radius: 100%;
-            background-color: orange;
-            /* eliminar esta linea cuando jale el logo */
-            background-image: url('https://pics.freeicons.io/premium/business-businessman-company-hero-super-team-together-icon-78369-64.png');
+            background-image: url('https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png');
+            background-size: cover;
         }
 
         @media (min-width: 320px) and (max-width: 480px) {
             .main-container {
-                padding: 32px 16px;
+                padding: 0px 16px 32px 16px;
+            }
+
+            .shadow-top {
+                height: 40px;
+            }
+
+            .container2 {
+                padding-top: 65px;
             }
 
             .loginf-container {
@@ -159,8 +194,11 @@
     <!-- contenedor de todo -->
     <div class="main-container">
         <!-- cuadro superior (sombra y curva)-->
-        <div class="shadow-top">
-        </div>
+        <div class="shadow-top" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-5.92,150.50 C228.27,-117.91 263.26,338.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                    style="stroke: none; fill: #FFF1E6;"></path>
+            </svg></div>
         <!-- contenedor del resto -->
         <div class="container2">
 
@@ -171,8 +209,14 @@
                     </div>
                     <div class="inf-container">
                         <h4 class="text-container">Socio</h4>
-                        <!-- borrar texto contenido en la siguiente etiqueta al jalar la imagen -->
-                        <div class="logo-barrett">[[logo]] The BARRETT<br>[image]Family Foundation
+                        <!--todo pendiente probar si es una sola imagen, o si es texto e imagen -->
+                        <div class="flex-child-item">
+                            <p class="text-title-fundation">
+                                The <span class="featured-text">Barrett</span>
+                                <br>
+                                Family Fundation
+                            </p>
+                            <div class="item-logo-image"></div>
                         </div>
                     </div>
                 </div>
