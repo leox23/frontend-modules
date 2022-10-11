@@ -14,7 +14,17 @@
 
     <style>
         * {
+            box-sizing: border-box;
             font-family: 'Lato', sans-serif;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
         }
 
         .parent-container {
@@ -22,9 +32,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 92px 10%;
-            isolation: isolate;
-            background-color: #FAFAFA;
+            padding: 92px 0px;
         }
 
         .title-container {
@@ -50,28 +58,23 @@
         .container {
             display: flex;
             flex-direction: row;
+            width: 1120px;
+            height: fit-content;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap !important;
         }
 
         .image {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
-            align-items: center;
-            margin: 5px;
+            flex: 1 1 270px;
             height: 250px;
-            border-radius: 8px;
             box-shadow: 10px 10px 64px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             background-size: cover !important;
-        }
-
-        .image-row1 {
-            width: max(272.5px);
-        }
-
-        .image-row2 {
-            width: 366.67px;
         }
 
         .box-texto {
@@ -95,6 +98,7 @@
             }
 
             .title-module {
+                margin-top: 0px;
                 font-size: 2rem;
             }
 
@@ -117,7 +121,6 @@
                 width: 100%;
                 height: 250px;
             }
-
         }
     </style>
 </head>
@@ -129,54 +132,57 @@
             <div class="bottom-border"></div>
         </div>
         <div class="container">
-            <div class="box image-row1 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663947719095-17af03c793d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Protección, Participación e Incidencia</h3>
                 </div>
             </div>
-            <div class="box image-row1 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663955954058-e8a202852eab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Educación</h3>
                 </div>
             </div>
-            <div class="box image-row1 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663919009263-5c8c8062ae63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Salud y Seguridad Alimentaria</h3>
                 </div>
             </div>
-            <div class="box image-row1 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663909162097-f0433ff9ec57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">WASH- Agua, Saneamiento e Higiene</h3>
                 </div>
             </div>
 
-        </div>
-        <div class="container">
-            <div class="box image-row2 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1659609556402-d5d1f3a90499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Respuesta a emergencias</h3>
                 </div>
             </div>
-            <div class="box image-row2 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663875928932-3bf9dba77e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Movilidad Humana y Migración</h3>
                 </div>
             </div>
-            <div class="box image-row2 image" style="
+            <div class="image"
+                style="
             background-image: url('https://images.unsplash.com/photo-1663875942232-07e9e32555e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
                 <div class="box-texto">
                     <h3 class="text-image">Empleabilidad, Emprendimiento y Desarrollo Económico</h3>
                 </div>
             </div>
         </div>
-
-
     </div>
 
 
