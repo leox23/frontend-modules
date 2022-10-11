@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+        }
+
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .main-container {
+            display: grid;
+            place-content: center;
+            padding: 92px 0px;
+        }
+
+        .content-center-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 1120px;
+        }
+
+        .text-container {
+            width: 50%;
+            text-align: left;
+            margin: 0%;
+        }
+
+        .text-container>p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #333333;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 60px 0px;
+            justify-content: space-around;
+            width:50%;
+        }
+
+        .item-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 30%;
+        }
+
+        .circle {
+            box-shadow: 10px 10px 10px #ebebeb;
+        }
+
+        .text-container > p {
+            margin-top: 10px;
+
+        }
+
+        .circle {
+            display: flex;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        #fisica {
+            background: #FF6B00;
+        }
+
+        #cognitiva {
+            background: #842E14;
+        }
+
+        #emocional {
+            background: #FDD25F;
+        }
+
+        #social {
+            background: #9054A1;
+        }
+
+        #economica {
+            background: #006661;
+        }
+
+        #espiritual {
+            background: #00ACCA;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .main-container {
+                width: 100%;
+                padding: 32px 16px;
+            }
+
+            .content-center-container {
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+
+            .flex-container {
+                width: 100%;
+            }
+
+            .text-container {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="content-center-container">
+        <div class="text-container">
+            <p>
+                El Programa Técnico Oportunidades, Protección y Ternura tiene por objetivo desarrollar y fortalecer a
+                los niños, niñas, adolescentes y jóvenes en habilidades para la vida, salud mental, capacidad de agencia
+                y resiliencia, a través de la creación y promoción de espacios de desarrollo, participación y
+                protección. La meta es que la niñez salvadoreña pueda ser fortalecida en diferentes áreas:
+            </p>
+        </div>
+        <div class="flex-container">
+            <!--  Envolver los items segun el ejemplo siguiente, corregir stilos de vista desktop para ir a movil    -->
+            <div class="item-container">
+                <div class="circle" id="fisica"></div>
+                <p>Fisica</p>
+            </div>
+            <div class="item-container">
+                <div class="circle" id="cognitiva"></div>
+                <p>Cognitiva</p>
+            </div>
+            <div class="item-container">
+                <div class="circle" id="emocional"></div>
+                <p>Emocional</p>
+            </div>
+            <div class="item-container">
+                <div class="circle" id="social"></div>
+                <p>Social</p>
+            </div>
+            <div class="item-container">
+                <div class="circle" id="economica"></div>
+                <p>Economica</p>
+            </div>
+            <div class="item-container">
+                <div class="circle" id="espiritual"></div>
+                <p>Espiritual.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
