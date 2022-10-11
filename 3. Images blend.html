@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,16 +69,27 @@
             color: white;
         }
 
-        .item-odd, .odd {
+        .item-odd,
+        .odd {
             justify-content: end;
             text-align: right;
         }
 
-        .item-even, .even{
+        .item-even,
+        .even {
             justify-content: start;
         }
 
         @media (min-width: 320px) and (max-width: 480px) {
+
+            .subtitle-container {
+                padding: 32px 16px;
+            }
+
+            .subtitle {
+                margin: 0px;
+                line-height: 29px;
+            }
 
             .images-contianer {
                 display: flex;
@@ -93,6 +104,14 @@
             .text-image {
                 text-align: center;
                 font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .subtitle-footer {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
             }
         }
     </style>
