@@ -24,10 +24,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
 
-        .parent-container {
+        .parent-container-empleos {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -35,16 +34,13 @@
             gap: 16px;
             height: fit-content;
             display: block;
-            background-color: white;
-            padding: 32px;
-            max-width: 802px;
+            width: 802px;
             border: 1px solid #DADFF1;
-            /* Sombra contenedor */
-            box-shadow: 0px 0px 20px rgba(181, 191, 227, 0.25);
             border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(181, 191, 227, 0.25);
         }
 
-        .title-container>h6 {
+        h5 {
             font-family: 'Lato', sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -111,7 +107,7 @@
         }
 
         @media (min-width: 320px) and (max-width: 480px) {
-            .parent-container {
+            .parent-container-empleos {
                 margin: 32px 16px;
             }
         }
@@ -119,13 +115,13 @@
 </head>
 
 <body>
-    <div class="parent-container">
+    <div class="parent-container-empleos">
 
-        <div class="title-container">
-            <h6>
+        <div class="title-container-empleos">
+            <h5>
                 Consultoría “Equipo de levantamiento de información (encuestas y grupos focales) y análisis de grupos
                 focales para la línea base de los Programas Técnicos”
-            </h6>
+            </h5>
         </div>
 
         <div class="meeting-details">
@@ -143,7 +139,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/3239/3239945.png" alt="Icono de hora">
                 </div>
                 <p class="details-text">
-                    Fecha límite para aplicar: 12 de enero del 2022
+                    <strong>Fecha límite para aplicar:</strong> 12 de enero del 2022
                 </p>
             </div>
 
@@ -161,7 +157,7 @@
         <div class="meeting-pqr">
             <p> Aplica y descarga TDR: <a href="https://bit.ly/WVSV-TDR">https://bit.ly/WVSV-TDR</a> </p>
             <p> <strong>Reunión informativa vía Zoom:</strong> Viernes 7 enero 2022</p>
-            <p> * Solicita el enlace de reunión vía email a <a
+            <p>* Solicita el enlace de reunión vía email a <a
                     href="mailto:carolina_Gomez@wvi.org">carolina_Gomez@wvi.org</a></p>
         </div>
 

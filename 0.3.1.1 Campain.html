@@ -19,37 +19,32 @@
         }
 
         body {
-            margin: 0px;
+            background: #FAFAFA;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .parent-container {
+        .parent-container-campain {
             height: fit-content;
             display: flex;
             flex-wrap: wrap;
             background-color: #FF6B00;
-
         }
 
-        .parent-container>div {
-            flex: 50%;
-            max-width: 50%;
-        }
 
-        .text-container {
+        .text-container-campain {
+            width: 50%;
             text-align: left;
             color: white;
             padding: 0px 92px;
-            /* align-items: center; */
             margin: auto;
-            /* align-content: center; */
-
         }
 
-        .text-container>h6 {
+        h6 {
             margin: 0;
-        }
-
-        .text-container>h6 {
             font-family: 'Lato';
             font-style: normal;
             font-size: 24px;
@@ -57,7 +52,7 @@
             font-weight: 700;
         }
 
-        .text-container>p {
+        p {
             font-family: 'Lato';
             font-style: normal;
             font-weight: 400;
@@ -67,42 +62,39 @@
             padding-top: 24px;
         }
 
-        .text-container>p:nth-of-type(2) {
-            padding-top: 32px;
-        }
-
-        .image-container {
+        .image-container-campain {
+            width: 50%;
             height: 702px;
             background-size: cover;
             background-position: center;
+            background-color: white;
             order: 2;
         }
 
         @media (min-width: 320px) and (max-width: 480px) {
-            .parent-container>div {
-                flex: 100%;
-                max-width: 100%;
+            .parent-container-campain {
+                flex-direction: column-reverse;
+                height: fit-content;
             }
 
-            .image-container {
-                order: 1;
+            .image-container-campain {
+                width: 100%;
                 background-image: url('https://images.unsplash.com/photo-1551966775-a4ddc8df052b');
                 background-size: cover;
-                height: 300px;
+                height: 220px;
             }
 
-            .text-container {
+            .text-container-campain {
+                width: 100% !important;
                 padding: 32px 16px;
-                padding-bottom: 32px;
-                order: 2;
-
+                height: fit-content;
             }
 
-            .text-container>h6 {
+            .subtitle-campain {
                 margin: 0;
             }
 
-            .text-container>p {
+            p {
                 padding-top: 24px;
                 margin: 0;
             }
@@ -112,12 +104,12 @@
 </head>
 
 <body>
-    <div class="parent-container">
-        <div class="text-container">
-            <h6>
+    <div class="parent-container-campain">
+        <div class="text-container-campain">
+            <h3 class="subtitle-campain">
                 Cada año, 1000 millones de niños, niñas y adolescentes en todo el planeta son marcados con las
                 cicatrices físicas y emocionales que deja la violencia.
-            </h6>
+            </h3>
             <p>La Agenda 2030 para el Desarrollo Sostenible, también conocida como los Objetivos del Desarrollo
                 Sostenible (ODS) generará una voluntad política y financiera sin precedentes para alcanzar
                 colectivamente estos objetivos que apunta a una sociedad más justa y equitativa.</p>
@@ -126,7 +118,7 @@
                 violencia contra la niñez como un tema de interés global. La campaña Necesitamos a todo el Mundo es
                 parte de la respuesta de la respuesta global de World Vision a los ODS.</p>
         </div>
-        <div class="image-container"
+        <div class="image-container-campain"
             style="background-image: url('https://images.unsplash.com/photo-1551966775-a4ddc8df052b');">
         </div>
     </div>

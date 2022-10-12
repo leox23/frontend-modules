@@ -28,7 +28,7 @@
             height: fit-content;
         }
 
-        .main-container {
+        .main-container-components {
             display: grid;
             place-content: center;
             padding: 92px 0px;
@@ -42,13 +42,13 @@
             width: 1120px;
         }
 
-        .text-container {
+        .text-container-components {
             width: 50%;
             text-align: left;
             margin: 0%;
         }
 
-        .text-container>p {
+        .text-container-components>p {
             font-family: 'Lato';
             font-style: normal;
             font-weight: 400;
@@ -57,7 +57,7 @@
             color: #333333;
         }
 
-        .flex-container {
+        .flex-container-components {
             display: flex;
             flex-flow: row wrap;
             gap: 60px 0px;
@@ -65,7 +65,7 @@
             width:50%;
         }
 
-        .item-container {
+        .item-container-components {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -73,16 +73,16 @@
             flex-basis: 30%;
         }
 
-        .circle {
+        .circle-components {
             box-shadow: 10px 10px 10px #ebebeb;
         }
 
-        .text-container > p {
+        .text-container-components > p {
             margin-top: 10px;
 
         }
 
-        .circle {
+        .circle-components {
             display: flex;
             width: 48px;
             height: 48px;
@@ -116,7 +116,7 @@
         }
 
         @media (min-width: 320px) and (max-width: 480px) {
-            .main-container {
+            .main-container-components {
                 width: 100%;
                 padding: 32px 16px;
             }
@@ -126,11 +126,11 @@
                 width: 100%;
             }
 
-            .flex-container {
+            .flex-container-components {
                 width: 100%;
             }
 
-            .text-container {
+            .text-container-components {
                 width: 100%;
             }
 
@@ -139,9 +139,9 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container-components">
         <div class="content-center-container">
-        <div class="text-container">
+        <div class="text-container-components">
             <p>
                 El Programa Técnico Oportunidades, Protección y Ternura tiene por objetivo desarrollar y fortalecer a
                 los niños, niñas, adolescentes y jóvenes en habilidades para la vida, salud mental, capacidad de agencia
@@ -149,30 +149,30 @@
                 protección. La meta es que la niñez salvadoreña pueda ser fortalecida en diferentes áreas:
             </p>
         </div>
-        <div class="flex-container">
+        <div class="flex-container-components">
             <!--  Envolver los items segun el ejemplo siguiente, corregir stilos de vista desktop para ir a movil    -->
-            <div class="item-container">
-                <div class="circle" id="fisica"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="fisica"></div>
                 <p>Fisica</p>
             </div>
-            <div class="item-container">
-                <div class="circle" id="cognitiva"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="cognitiva"></div>
                 <p>Cognitiva</p>
             </div>
-            <div class="item-container">
-                <div class="circle" id="emocional"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="emocional"></div>
                 <p>Emocional</p>
             </div>
-            <div class="item-container">
-                <div class="circle" id="social"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="social"></div>
                 <p>Social</p>
             </div>
-            <div class="item-container">
-                <div class="circle" id="economica"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="economica"></div>
                 <p>Economica</p>
             </div>
-            <div class="item-container">
-                <div class="circle" id="espiritual"></div>
+            <div class="item-container-components">
+                <div class="circle-components" id="espiritual"></div>
                 <p>Espiritual.</p>
             </div>
         </div>

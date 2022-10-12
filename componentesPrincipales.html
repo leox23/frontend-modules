@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 
     <!-- Fuentes -->
@@ -27,10 +30,11 @@
             width: 100%;
             height: fit-content;
         }
-        .parent-container {
+
+        .parent-container-components {
             display: grid;
             place-content: center;
-            padding:64px 0px;
+            padding: 64px 0px;
         }
 
         .header-container {
@@ -42,27 +46,27 @@
         }
 
 
-        #subtitle {
+        #subtitle-components {
             margin-top: 0px;
             text-align: center;
             font-size: 32px;
         }
 
-        #line {
+        #line-components {
             width: 100px;
             height: 8px;
             background: orange;
         }
 
-        #main {
+        #main-components {
             display: flex;
             padding: 50px 0px;
             width: 1120px;
-            gap:60px;
+            gap: 60px;
             align-items: center;
         }
 
-        #image1 {
+        #image1-components {
             width: 100%;
             border-radius: 20px;
             height: 466px;
@@ -74,11 +78,11 @@
             width: 100%;
         }
 
-        #icon {
+        #icon-components {
             width: 64px;
             height: 64px;
             border-radius: 100%;
-            background-image: url('https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png');
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/31/18/39/icon-components-1294533_960_720.png');
             background-size: cover;
         }
 
@@ -86,9 +90,21 @@
             font-size: 24px;
         }
 
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
         ul {
-            margin-top:0px;
-            margin-bottom: 0px; 
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        p:last-child {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
         }
 
         .list {
@@ -99,28 +115,24 @@
             color: black;
         }
 
-        .footer-paragraph {
-
-        }
-
         @media (min-width: 320px) and (max-width: 480px) {
-            .parent-container {
+            .parent-container-components {
                 padding: 32px 14px;
             }
 
 
-            #main {
-                width:100% ;
+            #main-components {
+                width: 100%;
                 flex-direction: column;
                 padding-top: 24px;
                 gap: 16px;
             }
 
-            #info > h3 {
+            #info>h3 {
                 margin-top: 16px;
             }
 
-            #image1 {
+            #image1-components {
                 height: 216px;
             }
         }
@@ -128,19 +140,19 @@
 </head>
 
 <body>
-    <div class="parent-container">
+    <div class="parent-container-components">
         <header class="header-container">
-            <h2 id="subtitle">
+            <h2 id="subtitle-components">
                 Cuenta con dos componentes principales:
             </h2>
-            <div id="line"></div> 
+            <div id="line-components"></div>
         </header>
-        <div id="main">
-            <div id="image1">
+        <div id="main-components">
+            <div id="image1-components">
             </div>
             <div id="info">
 
-                <div id="icon"></div>
+                <div id="icon-components"></div>
                 <h3>WASH<br>(Agua, Saneamiento e Higiene)</h3>
                 <p>
                     cuyo objetivo es promover el acceso sostenible a agua, saneamiento adecuado y promoción de la
@@ -160,12 +172,12 @@
                     <br>
                 </ul>
                 <p class="footer-paragraph">
-                    El Programa Técnico <strong>Entornos Resilientes</strong> tiene la meta de que niñas, niños, adolescentes y jóvenes
+                    El Programa Técnico <strong>Entornos Resilientes</strong> tiene la meta de que niñas, niños,
+                    adolescentes y jóvenes
                     vivan y crezcan en entornos resilientes que promueven su desarrollo.
                 </p>
             </div>
         </div>
-    </div>
     </div>
 </body>
 

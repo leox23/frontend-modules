@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,97 +27,110 @@
             height: fit-content;
         }
 
-        .parent-container {
+        .parent-container-moredetails {
             display: grid;
             place-content: center;
             padding: 50px 0px;
         }
 
-        .content-container {
+        .content-container-moredetails {
             display: flex;
             width: 1120px;
         }
 
-        .left-content {
-            display:flex;
+        .left-content-moredetails {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             width: 60%;
-            padding-right:60px;
+            padding-right: 60px;
             /*
             background: blue;
             */
         }
 
         .right-content {
-            padding:40px 50px;
+            padding: 40px 50px;
             width: 40%;
             background: #FF6B00;
-            color:#F7FEFF;
+            color: #F7FEFF;
         }
 
         .subtitle-left {
-            font-size:24px;
+            margin-bottom: 0px;
         }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .content-right,
+        .unordered-item,
         .content-left {
             font-size: 18px;
         }
 
-        .content-right, .unordered-item {
-            font-size: 18px;
+        li {
+            margin: 1rem 0px;
         }
 
-
-        .content-footer {
-            padding-top: 100px;
-            margin-top:0px;
+        .content-footer-moredetails {
+            padding-top: 60px;
+            margin-top: 0px;
             font-style: italic;
+            color: #000;
         }
 
 
-    @media (min-width: 320px) and (max-width: 480px) {
-        .parent-container {
-            padding: 0px;
-        }
-        .content-container {
-            flex-direction: column;
-        }
+        @media (min-width: 320px) and (max-width: 480px) {
+            .parent-container-moredetails {
+                padding: 0px;
+            }
 
-        .content-container, .left-content, .right-content {
-            width: 100%;
-        }
+            .content-container-moredetails {
+                flex-direction: column;
+            }
 
-        .subtitle-left {
-            margin:0px;
-        }
+            .content-container-moredetails,
+            .left-content-moredetails,
+            .right-content {
+                width: 100%;
+            }
 
-        .left-content {
-            padding:32px 16px;
-        }
+            .subtitle-left {
+                margin: 0px;
+            }
 
-        .right-content {
-            padding:32px 30px;
-        }
+            .left-content-moredetails {
+                padding: 32px 16px;
+            }
 
-        ul {
-            padding-left: 10px;
-        }
+            .right-content {
+                padding: 32px 30px;
+            }
 
-        
+            ul {
+                padding-left: 10px;
+            }
 
-        .content-footer {
-            padding-top: 70px;
+
+
+            .content-footer-moredetails {
+                padding-top: 70px;
+            }
         }
-    }
     </style>
 
 
 </head>
 
 <body>
-    <div class="parent-container">
-        <div class="content-container">
-            <div class="left-content content">
+    <div class="parent-container-moredetails">
+        <div class="content-container-moredetails">
+            <div class="left-content-moredetails content">
                 <h3 class="subtitle-left">Cada año, 1000 millones de niños, niñas y adolescentes en todo el planeta son
                     marcados con las cicatrices físicas y emocionales que deja la violencia.</h3>
                 <p class="content-left">World Vision define la violencia contra la niñez como toda forma de violencia
@@ -150,7 +163,7 @@
                         niñasestá sub registrada y que por lo tanto no conocemos sus dimensiones reales.</li>
 
                 </ul>
-                <p class="content-footer">FUENTE: SONDEO WORLD VISION/IPSOS 2014</p>
+                <p class="content-footer-moredetails">FUENTE: SONDEO WORLD VISION/IPSOS 2014</p>
             </div>
         </div>
     </div>
